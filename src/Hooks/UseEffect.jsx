@@ -75,6 +75,11 @@ const UseEffectComponent = () => {
             <h1 id="external-element">
                 Use Effect
             </h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </>
     )
 }
