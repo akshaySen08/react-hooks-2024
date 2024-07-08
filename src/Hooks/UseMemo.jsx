@@ -5,7 +5,7 @@ const UseMemoComponent = () => {
     const [count, setCount] = useState(0)
     const [items] = useState(initialItems)
 
-    const selectedItem = useMemo(() => initialItems.find(i => i.id === count), [count, items])
+    const selectedItem = useMemo(() => initialItems.find(i => i.id === count), [count])
 
     return (
         <>

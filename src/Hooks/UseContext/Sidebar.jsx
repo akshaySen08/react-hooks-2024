@@ -1,5 +1,4 @@
-import { useContext } from "react"
-import { UserContext, useUserContext } from "./context"
+import { useUserContext } from "./context"
 
 const SidebarComponent = () => {
     const user = useUserContext()
