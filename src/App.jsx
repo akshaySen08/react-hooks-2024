@@ -2,6 +2,7 @@ import './App.css';
 import UseCallBackComponent from './Hooks/UseCallback';
 import UseEffectComponent from './Hooks/UseEffect'
 import UseMemoComponent from './Hooks/UseMemo';
+import UseContextComponent from './Hooks/UseContext/UseContext';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <h1>React Hooks</h1>
       {/* <UseEffectComponent></UseEffectComponent> */}
       {/* <UseMemoComponent /> */}
-      <UseCallBackComponent></UseCallBackComponent>
+      {/* <UseCallBackComponent></UseCallBackComponent> */}
+      <UseContextComponent />
     </div>
   );
 }
