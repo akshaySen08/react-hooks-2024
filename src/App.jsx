@@ -5,6 +5,7 @@ import UseMemoComponent from './Hooks/UseMemo';
 import UseContextComponent from './Hooks/UseContext/UseContext';
 import UseRefComponent from './Hooks/UseRef';
 import UseReducerComponent from './Hooks/UseReducer';
+import UseImperativeHandleComponent from './Hooks/UseImperativeHandle/UseImperativeHandle';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <UseCallBackComponent></UseCallBackComponent> */}
       {/* <UseContextComponent /> */}
       {/* <UseRefComponent /> */}
-      <UseReducerComponent></UseReducerComponent>
+      {/* <UseReducerComponent></UseReducerComponent> */}
+      <UseImperativeHandleComponent />
     </div>
   );
 }
