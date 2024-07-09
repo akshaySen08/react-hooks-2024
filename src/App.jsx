@@ -4,6 +4,7 @@ import UseEffectComponent from './Hooks/UseEffect'
 import UseMemoComponent from './Hooks/UseMemo';
 import UseContextComponent from './Hooks/UseContext/UseContext';
 import UseRefComponent from './Hooks/UseRef';
+import UseReducerComponent from './Hooks/UseReducer';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <UseMemoComponent /> */}
       {/* <UseCallBackComponent></UseCallBackComponent> */}
       {/* <UseContextComponent /> */}
-      <UseRefComponent />
+      {/* <UseRefComponent /> */}
+      <UseReducerComponent></UseReducerComponent>
     </div>
   );
 }
