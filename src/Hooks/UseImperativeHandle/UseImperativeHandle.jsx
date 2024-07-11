@@ -15,7 +15,7 @@ const UseImperativeHandleComponent = () => {
             <button onClick={() => counterRef.current.increment()}>Increment</button>
             <button onClick={() => counterRef.current.reset()}>Reset</button>
             <br></br>
-            <hr/>
+            <hr />
             <Input ref={inputRef} />
             <button onClick={() => inputRef.current.reset()}>Reset input</button>
         </>
