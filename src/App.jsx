@@ -6,6 +6,7 @@ import UseContextComponent from './Hooks/UseContext/UseContext';
 import UseRefComponent from './Hooks/UseRef';
 import UseReducerComponent from './Hooks/UseReducer';
 import UseImperativeHandleComponent from './Hooks/UseImperativeHandle/UseImperativeHandle';
+import UseTransitionComponent from './Hooks/UseTransition/UseTransition';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <UseContextComponent /> */}
       {/* <UseRefComponent /> */}
       {/* <UseReducerComponent></UseReducerComponent> */}
-      <UseImperativeHandleComponent />
+      {/* <UseImperativeHandleComponent /> */}
+      <UseTransitionComponent></UseTransitionComponent>
     </div>
   );
 }
