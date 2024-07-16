@@ -7,6 +7,7 @@ import UseRefComponent from './Hooks/UseRef';
 import UseReducerComponent from './Hooks/UseReducer';
 import UseImperativeHandleComponent from './Hooks/UseImperativeHandle/UseImperativeHandle';
 import UseTransitionComponent from './Hooks/UseTransition/UseTransition';
+import UseDeferredValueComponent from './Hooks/UseDeferredValue/UseDeferredValue';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <UseRefComponent /> */}
       {/* <UseReducerComponent></UseReducerComponent> */}
       {/* <UseImperativeHandleComponent /> */}
-      <UseTransitionComponent></UseTransitionComponent>
+      {/* <UseTransitionComponent></UseTransitionComponent> */}
+      <UseDeferredValueComponent/>
     </div>
   );
 }
