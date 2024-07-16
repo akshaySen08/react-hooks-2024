@@ -8,6 +8,7 @@ import UseReducerComponent from './Hooks/UseReducer';
 import UseImperativeHandleComponent from './Hooks/UseImperativeHandle/UseImperativeHandle';
 import UseTransitionComponent from './Hooks/UseTransition/UseTransition';
 import UseDeferredValueComponent from './Hooks/UseDeferredValue/UseDeferredValue';
+import UseLayoutEffectComponent from './Hooks/UseLayoutEffect/UseLayoutEffect';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <UseReducerComponent></UseReducerComponent> */}
       {/* <UseImperativeHandleComponent /> */}
       {/* <UseTransitionComponent></UseTransitionComponent> */}
-      <UseDeferredValueComponent/>
+      {/* <UseDeferredValueComponent/> */}
+      <UseLayoutEffectComponent/>
     </div>
   );
 }
