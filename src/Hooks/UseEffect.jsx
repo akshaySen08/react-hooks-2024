@@ -15,9 +15,12 @@ const UseEffectComponent = () => {
         return () => {
             // Cleanup code to run on unmount
             clearTimeout(timer)
+            console.log("clearing timer ");
+            
         }
     }, [count])
 
+    /* Example of subscription and unsubscribe */
     useEffect(() => {
         const handleResize = () => {
             console.log('Window resized');
@@ -31,19 +34,19 @@ const UseEffectComponent = () => {
     }, []);
 
     useEffect(() => {
-        const controller = new AbortController();
-        const signal = controller.signal;
+    const controller = new AbortController();
+    const signal = controller.signal;
 
-        fetch('https://api.example.com/data', { signal })
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => {
-                if (error.name === 'AbortError') {
-                    console.log('Fetch aborted');
-                } else {
-                    console.error('Fetch error:', error);
-                }
-            });
+    fetch('https://api.example.com/data', { signal })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => {
+    if (error.name === 'AbortError') {
+    console.log('Fetch aborted');
+    } else {
+    console.error('Fetch error:', error);
+    }
+});
 
         return () => {
             controller.abort();
@@ -60,9 +63,11 @@ const UseEffectComponent = () => {
         };
     }, []);
 
+    /* Example of changing the title */
     useEffect(() => {
         const element = document.getElementById('external-element');
         element.style.backgroundColor = 'blue';
+        element.textContent = `Count is ${count}`;
 
         return () => {
             element.style.backgroundColor = 'initial';

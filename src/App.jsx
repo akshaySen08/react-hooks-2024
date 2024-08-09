@@ -9,11 +9,12 @@ import UseImperativeHandleComponent from './Hooks/UseImperativeHandle/UseImperat
 import UseTransitionComponent from './Hooks/UseTransition/UseTransition';
 import UseDeferredValueComponent from './Hooks/UseDeferredValue/UseDeferredValue';
 import UseLayoutEffectComponent from './Hooks/UseLayoutEffect/UseLayoutEffect';
+import PracticeUseEffect from './Practice/UseEffect/PracticeUseEffect';
 
 function App() {
   return (
     <div className="App">
-      <h1>React Hooks</h1>
+      {/* <h1>React Hooks</h1> */}
       {/* <UseEffectComponent></UseEffectComponent> */}
       {/* <UseMemoComponent /> */}
       {/* <UseCallBackComponent></UseCallBackComponent> */}
@@ -23,7 +24,11 @@ function App() {
       {/* <UseImperativeHandleComponent /> */}
       {/* <UseTransitionComponent></UseTransitionComponent> */}
       {/* <UseDeferredValueComponent/> */}
-      <UseLayoutEffectComponent/>
+      {/* <UseLayoutEffectComponent/> */}
+
+
+      {/* ----------Practice React-------------- */}
+      <PracticeUseEffect/>
     </div>
   );
 }
