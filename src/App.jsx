@@ -10,6 +10,7 @@ import UseTransitionComponent from './Hooks/UseTransition/UseTransition';
 import UseDeferredValueComponent from './Hooks/UseDeferredValue/UseDeferredValue';
 import UseLayoutEffectComponent from './Hooks/UseLayoutEffect/UseLayoutEffect';
 import PracticeUseEffect from './Practice/UseEffect/PracticeUseEffect';
+import PracticeUseMemo from './Practice/UseMemo/PracticeUseMemo';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
 
 
       {/* ----------Practice React-------------- */}
-      <PracticeUseEffect/>
+      {/* <PracticeUseEffect/> */}
+      <PracticeUseMemo />
     </div>
   );
 }
