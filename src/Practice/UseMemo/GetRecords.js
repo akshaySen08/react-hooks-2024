@@ -1,8 +1,9 @@
-const GetRecords = () => {
-    const users = Array.from({ length: 99999 }, (_, i) => ({ id: i, name: `Name ${i}`, isSelected: false }));
 
-    users[99998].isSelected = true;
-    return users
-}
+const usersList = Array.from({ length: 77777 }, (_, i) => ({ id: i, name: `Name ${i}`, isSelected: false }));
 
-export default GetRecords;
+usersList[77776].isSelected = true;
+
+console.log(usersList);
+
+
+export default usersList;

@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
-import GetRecords from "./GetRecords";
+import usersList from './GetRecords'
 
 const PracticeUseMemo = () => {
 
-    const [users, setUsers] = useState(GetRecords());
+    const [users] = useState(usersList);
     const [count, setCount] = useState(0);
 
     // useEffect(() => {
@@ -12,7 +12,13 @@ const PracticeUseMemo = () => {
     // }, []);
 
     // sorting of records
-    const selected = useMemo(() => users.filter((u) => u.isSelected), [users]);
+    const selected = useMemo(() => {
+        console.log('useMemo called');
+        return users.filter((u) => u.isSelected);
+    }, [users]);
+    // const selected = users.find((u) => u.isSelected);
+    // console.log(selected);
+    
 
     return (
         <div>
@@ -22,7 +28,7 @@ const PracticeUseMemo = () => {
 
             <hr />
             <h2>Users</h2>
-            <h3>Selected user: {selected}</h3>
+            <h3>Selected user: {selected.id}</h3>
             <table>
                 <thead>
                     <tr>
