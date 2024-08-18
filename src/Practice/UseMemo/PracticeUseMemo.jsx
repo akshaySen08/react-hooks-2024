@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import usersList from './GetRecords'
 
 const PracticeUseMemo = () => {
@@ -14,7 +14,7 @@ const PracticeUseMemo = () => {
     // sorting of records
     const selected = useMemo(() => {
         console.log('useMemo called');
-        return users.filter((u) => u.isSelected);
+        return users.find((u) => u.isSelected);
     }, [users]);
     // const selected = users.find((u) => u.isSelected);
     // console.log(selected);
