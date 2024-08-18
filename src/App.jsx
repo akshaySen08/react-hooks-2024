@@ -1,4 +1,5 @@
 import './App.css';
+import PracticeUseCallback from './Practice/UseCallback/PracticeUseCallback';
 // import UseCallBackComponent from './Hooks/UseCallback';
 // import UseEffectComponent from './Hooks/UseEffect'
 // import UseMemoComponent from './Hooks/UseMemo';
@@ -31,8 +32,11 @@ function App() {
 
       {/* ----------Practice React-------------- */}
       {/* <PracticeUseEffect/> */}
+
       {/* <PracticeUseMemo /> */}
-      <RealLifeUseMemo />
+      {/* <RealLifeUseMemo /> */}
+
+      <PracticeUseCallback />
     </div>
   );
 }
