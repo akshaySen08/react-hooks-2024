@@ -14,6 +14,7 @@ import './App.css';
 // import RealLifeUseMemo from './Practice/UseMemo/RealLifeExample/RealLifeUseMemo';
 // import PracticeUseCallback from './Practice/UseCallback/PracticeUseCallback';
 import PracticeUseContext from './Practice/UseContext/PracticeUseContext';
+import PracticeUseRef from './Practice/UseRef/PracticeUseRef';
 
 function App() {
   return (
@@ -39,7 +40,9 @@ function App() {
 
       {/* <PracticeUseCallback />  Ex - Shuffle users and Search Users */}
 
-      <PracticeUseContext/>
+      {/* <PracticeUseContext/> */}
+
+      <PracticeUseRef />
 
     </div>
   );
