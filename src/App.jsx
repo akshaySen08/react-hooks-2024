@@ -1,5 +1,4 @@
 import './App.css';
-import PracticeUseCallback from './Practice/UseCallback/PracticeUseCallback';
 // import UseCallBackComponent from './Hooks/UseCallback';
 // import UseEffectComponent from './Hooks/UseEffect'
 // import UseMemoComponent from './Hooks/UseMemo';
@@ -12,7 +11,9 @@ import PracticeUseCallback from './Practice/UseCallback/PracticeUseCallback';
 // import UseLayoutEffectComponent from './Hooks/UseLayoutEffect/UseLayoutEffect';
 // import PracticeUseEffect from './Practice/UseEffect/PracticeUseEffect';
 // import PracticeUseMemo from './Practice/UseMemo/PracticeUseMemo';
-import RealLifeUseMemo from './Practice/UseMemo/RealLifeExample/RealLifeUseMemo';
+// import RealLifeUseMemo from './Practice/UseMemo/RealLifeExample/RealLifeUseMemo';
+// import PracticeUseCallback from './Practice/UseCallback/PracticeUseCallback';
+import PracticeUseContext from './Practice/UseContext/PracticeUseContext';
 
 function App() {
   return (
@@ -36,7 +37,10 @@ function App() {
       {/* <PracticeUseMemo /> */}
       {/* <RealLifeUseMemo /> */}
 
-      <PracticeUseCallback />
+      {/* <PracticeUseCallback />  Ex - Shuffle users and Search Users */}
+
+      <PracticeUseContext/>
+
     </div>
   );
 }
