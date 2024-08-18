@@ -1,4 +1,5 @@
 import './App.css';
+import PracticeUseReducer from './Practice/UseReducer/PracticeUseReducer';
 // import UseCallBackComponent from './Hooks/UseCallback';
 // import UseEffectComponent from './Hooks/UseEffect'
 // import UseMemoComponent from './Hooks/UseMemo';
@@ -13,8 +14,8 @@ import './App.css';
 // import PracticeUseMemo from './Practice/UseMemo/PracticeUseMemo';
 // import RealLifeUseMemo from './Practice/UseMemo/RealLifeExample/RealLifeUseMemo';
 // import PracticeUseCallback from './Practice/UseCallback/PracticeUseCallback';
-import PracticeUseContext from './Practice/UseContext/PracticeUseContext';
-import PracticeUseRef from './Practice/UseRef/PracticeUseRef';
+// import PracticeUseContext from './Practice/UseContext/PracticeUseContext';
+// import PracticeUseRef from './Practice/UseRef/PracticeUseRef';
 
 function App() {
   return (
@@ -42,7 +43,9 @@ function App() {
 
       {/* <PracticeUseContext/> */}
 
-      <PracticeUseRef />
+      {/* <PracticeUseRef /> */}
+
+      <PracticeUseReducer></PracticeUseReducer>
 
     </div>
   );
